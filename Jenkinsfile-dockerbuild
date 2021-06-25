@@ -2,8 +2,8 @@
 properties([
 	parameters([
 		string(defaultValue: 'lincytv', description: 'Enter the repos', name: 'repo'),
-		string(defaultValue: 'welcome', description: 'Enter the image_name', name: 'image_name'),
-		string(defaultValue: 'welcome', description: 'Enter the env', name: 'dev'),
+		string(defaultValue: 'ubuntu', description: 'Enter the image_name', name: 'image_name'),
+		string(defaultValue: 'dev', description: 'Enter the env', name: 'env'),
 		])
 	])
 node {
