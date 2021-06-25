@@ -1,0 +1,7 @@
+@Library('jenkins-lib') _
+
+node {
+   stage {
+	   sh 
+   }
+}
