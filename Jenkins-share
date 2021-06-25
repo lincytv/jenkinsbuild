@@ -1,15 +1,9 @@
 @Library('jenkins-lib') _
-<<<<<<< HEAD
-import helloworld
+
+properties([parameters([string(defaultValue: 'Welcome', description: 'Print the HelloWorld', name: 'message')])])
 node {
 
-   stage {
-	   mesg_print("test-123")
-=======
-
-node {
-   stage {
-	   sh 
->>>>>>> f5968d710938f60fead34983220021d6a70ebc84
+   stage('status'){
+	   helloworld("Hello ${params.message}, Welcome to Ooty")
    }
 }
