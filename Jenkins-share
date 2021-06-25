@@ -1,7 +1,8 @@
 @Library('jenkins-lib') _
-
+import helloworld
 node {
+
    stage {
-	   sh 
+	   mesg_print("test-123")
    }
 }
