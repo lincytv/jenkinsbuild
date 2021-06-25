@@ -1,0 +1,13 @@
+@Library('jenkins-lib') _
+properties([
+	parameters([
+		string(defaultValue: 'lincytv', description: 'Enter the repos', name: 'repo'),
+		string(defaultValue: 'welcome', description: 'Enter the image_name', name: 'image_name'),
+		string(defaultValue: 'welcome', description: 'Enter the env', name: 'dev'),
+		])
+	])
+node {
+	stage(''){
+          docker-push(${repo},${image_name},${env})
+	}
+}
