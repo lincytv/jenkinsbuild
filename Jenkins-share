@@ -1,9 +1,9 @@
 @Library('jenkins-lib') _
-import helloworld
+
 node {
 
    stage {
-	   mesg_print("test-123")
+	   helloworld("test-123")
 
   }
 }
