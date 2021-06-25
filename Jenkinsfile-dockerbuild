@@ -7,9 +7,10 @@ properties([
 		])
 	])
 node {
-	stage('docker_push')
+	stage('docker_push'){
 	withCredentials([usernamePassword(credentialsId: 'docker_login_dev', usernameVariable: 'Username', passwordVariable: 'Password')])
 	{
           docker-push(${repo},${image_name})
 	}
+   }
 }
