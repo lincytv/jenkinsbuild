@@ -2,7 +2,7 @@
 
 node {
 
-   stage {
+   stage('Status') {
 	   helloworld("test-123")
 
   }
