@@ -4,6 +4,6 @@ properties([parameters([string(defaultValue: 'Welcome', description: 'Print the 
 node {
 
    stage('status'){
-	   mesg_print("${params.message}")
+	   helloworld("${params.message}")
    }
 }
