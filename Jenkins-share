@@ -4,6 +4,6 @@ properties([parameters([string(defaultValue: 'Welcome', description: 'Print the 
 node {
 
    stage('status'){
-	   helloworld("${params.message}")
+	   helloworld("Hello ${params.message}, Welcome to Ooty")
    }
 }
