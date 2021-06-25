@@ -1,4 +1,5 @@
 @Library('jenkins-lib') _
+node {
 properties([
 	parameters([
 		string(defaultValue: 'lincytv', description: 'Enter the repos', name: 'repo'),
@@ -6,7 +7,6 @@ properties([
 		string(defaultValue: 'dev', description: 'Enter the env', name: 'env')
 		])
 	])
-node {
 	stage('docker_push'){
 	withCredentials([usernamePassword(credentialsId: 'docker_login_dev', usernameVariable: 'Username', passwordVariable: 'Password')])
 	{
