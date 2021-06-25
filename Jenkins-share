@@ -1,9 +1,9 @@
 @Library('jenkins-lib') _
 
+properties([parameters([string(defaultValue: 'Welcome', description: 'Print the HelloWorld', name: 'message')])])
 node {
 
-   stage('Status') {
-	   helloworld("test-123")
-
-  }
+   stage('status'){
+	   mesg_print("${params.message}")
+   }
 }
