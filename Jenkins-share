@@ -1,15 +1,8 @@
 @Library('jenkins-lib') _
-<<<<<<< HEAD
 import helloworld
 node {
 
    stage {
 	   mesg_print("test-123")
-=======
 
-node {
-   stage {
-	   sh 
->>>>>>> f5968d710938f60fead34983220021d6a70ebc84
-   }
 }
